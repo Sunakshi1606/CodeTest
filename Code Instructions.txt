@@ -1,0 +1,18 @@
+Instruction on running the application.
+
+1.You need to extract the code from the source.
+2.Install a Nuget Manager to run Umbraco along with the code.
+3.Build the soultion on your local machine.
+4.Run the application on Google Chrome.
+5.The application starts with its initial page, displaying a form, 
+to collect all the required data corresponding to the cheque. The input fields on the table will be
+a. User Name
+b. Cheque No
+c. Cheque Date
+d. Cheque Amount.
+5.After enetring the data, on clicking the submit button. A table underneath the form will be displayed showing the 
+entered data in a tabular form.
+6.There is an additional column in the table , representing the show field, on click of the link,it will diaplay a vertical form displaying
+ all the fields corresponding to the cheque details along with the cheque amount in words.
+ 
+ 
