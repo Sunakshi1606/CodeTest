@@ -1,0 +1,61 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+@* the fun starts here *@
+
+
+<link href="~/css/cust.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/Scripts/jquery.min.js"></script>
+    <script src="/Scripts/jquery.dropotron.min.js"></script>
+    <script src="/Scripts/skel.min.js"></script>
+    <script src="/Scripts/skel-layers.min.js"></script>
+    <script src="/Scripts/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+@RenderBody()
+<body class="homepage">
+
+    <!-- Header Wrapper -->
+    <div class="wrapper style1">
+
+        <!-- Header -->
+       
+        @{Html.RenderAction("RenderHeader", "SiteLayout"); }
+
+        <!-- Banner -->
+        <div id="banner">
+            <section class="container">
+                <h2>Cheque Details</h2>
+            </section>
+        </div>
+    </div>
+
+    <!-- Section One -->
+    <!--Add Cheque Details-->
+    @{Html.RenderAction("RenderAddChequeDetails", "Home"); }
+
+    <!-- Section Two -->
+    <!--Show Cheque List-->
+    @{Html.RenderAction("RenderChequeList", "Home"); }
+
+    <!-- Section Three -->
+    <!--Show Cheque Details-->
+    @{Html.RenderAction("RenderShowChequeDetails", "Home"); }
+
+    <!-- Footer -->
+    @{Html.RenderAction("RenderFooter", "SiteLayout"); }
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@inherits UmbracoViewPage< UmbracoChequeApplication.Model.AddChequeDetails>
+
+@using (Html.BeginUmbracoForm("SubmitForm", "AddChequeDetailsSurface", FormMethod.Post))
+{
+    @*@Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+
+    @Html.LabelFor(m => m.ChequeNo)
+    @Html.TextBoxFor(m => m.ChequeNo)
+
+    @Html.LabelFor(m => m.Date)
+    @Html.TextBoxFor(m => m.Date)
+
+    @Html.LabelFor(m => m.Amount)
+    @Html.TextBoxFor(m => m.Amount)
+
+    <button>Submit</button>*@
+
+    <table class="table table-responsive table-bordered">
+        <tr>
+            <td>Name</td>
+            <td>
+                @Html.TextBox("Name", null, htmlAttributes: new { @class = "form-control" })
+
+            </td>
+        </tr>
+        <tr>
+            <td>Cheque Number</td>
+            <td>
+                @Html.TextBox("ChequeNo", null, htmlAttributes: new { @class = "form-control" })
+
+            </td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>
+                @Html.TextBox("Date", null, htmlAttributes: new { @class = "form-control" })
+
+            </td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td>
+                @Html.TextBox("Amount", null, htmlAttributes: new { @class = "form-control" })
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <input type="submit" value="Submit" class="btn btn-success" />
+            </td>
+        </tr>
+    </table>
+}  

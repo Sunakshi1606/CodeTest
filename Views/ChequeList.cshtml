@@ -1,0 +1,20 @@
+﻿@*@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+}*@
+
+@* the fun starts here *@
+
+
+@model UmbracoChequeApplication.Model.ChequeList
+
+@if (Model != null)
+{ <div>Employee Deatils </div>
+  <div>Name: @Model.Name </div>
+  <div>Cheque No:@Model.ChequeNo</div>
+  <div>Date: @Model.Date</div>
+  <div>Amount: @Model.Amount</div>
+}
+
+    
+ 

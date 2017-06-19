@@ -1,0 +1,21 @@
+﻿    @inherits UmbracoViewPage<UmbracoChequeApplication.Model.ChequeDetails>
+
+    @using (Html.BeginUmbracoForm("RenderShowDetails", "ChequeDetailsSurface"))
+    {
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+
+    @Html.LabelFor(m => m.ChequeNo)
+    @Html.TextBoxFor(m => m.ChequeNo)
+
+    @Html.LabelFor(m => m.Date)
+    @Html.TextBoxFor(m => m.Date)
+
+    @Html.LabelFor(m => m.Amount)
+    @Html.TextBoxFor(m => m.Amount)
+    
+    @Html.LabelFor(m => m.AmountInWords)
+    @Html.TextBoxFor(m => m.AmountInWords)
+
+
+    }
